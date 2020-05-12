@@ -6,7 +6,7 @@ npm run docs:build
 
 echo "Enter commit message:"
 read MESSAGE
-read -p "Releasing $MESSAGE - are you sure? (y/n)" -n 1 -r
+read -p "commit message is ` $MESSAGE ` - are you sure? (y/n)" -n 1 -r
 echo #(optional) move to a new line
 if [[ $REPLY =~ ^[y/Y]$ ]]
 
@@ -16,6 +16,7 @@ then
     # 进入生成的文件夹
     cd docs/.vuepress/dist
     #commit
+    git init
     git add -A
     git commit -m "[build] $MESSAGE"
     # 如果发布到 https://<USERNAME>.github.io/<REPO>
