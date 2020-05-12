@@ -19,7 +19,7 @@ then
     git add -A
     git commit -m "[build] $MESSAGE"
     # 如果发布到 https://<USERNAME>.github.io/<REPO>
-    git push -f git@github.com:sowtf0202/notes.git master:git-pages
+    git push -f git@github.com:sowtf0202/notes.git master
     cd -
 fi
 
