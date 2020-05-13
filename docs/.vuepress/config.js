@@ -12,27 +12,25 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     sidebarDepth: 2,
-    nav: [
-      { text: 'Guide', link: '/guide/', target:'_blank' }
-    ],
+    // nav: [
+    //   { text: 'Guide', link: '/guide/', target:'_blank' }
+    // ],
     sidebar: [
       {
-        title: 'Group 2',
-        children: [ /* ... */ ]
-      },
-      {
-        title: 'blog',
-        children: [ 
+        title: 'Vue',
+        children: [
           {
-            title: 'b',   // 必要的
-            path: '/blog/b',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          },
-          {
-            title: 'c',   // 必要的
-            path: '/blog/c',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+            title: '初始化data',
+            path: '/vue/data'
           }
         ]
       }
+      // {
+      //   title: 'http',
+      //   children: [ 
+          
+      //   ]
+      // }
     ]
   }
 }
