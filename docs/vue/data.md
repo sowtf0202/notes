@@ -108,6 +108,3 @@ export function proxy (target: Object, sourceKey: string, key: string) {
 `get` 方法返回 `this[sourceKey][key]` 相当于返回 `this._data[key]`
 `set` 方法将 `this[sourceKey][key]` 设置为 `val`
 前面说到 `vm._data` 指向我们自己定义的 `data`,所以这也就是为什么在 `data` 上定义的 `message` 可以通过 `this.message` 访问到,而不是 `this.data.message`, 其实相当于访问到了 `vm._data.message`
-
-
-

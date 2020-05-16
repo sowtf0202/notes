@@ -1,11 +1,11 @@
 module.exports = {
   base: '/notes/',
-  title: 'sowtf\'s notes',
+  title: 'sowtf',
   description: 'sowtf\'s vuepress notes, sowtf, so what the fuck, 学习前端, vue 学习',
   themeConfig: {
     repo: 'https://github.com/sowtf0202/notes', //git 仓库地址
-    repoLabel: 'github', // 自定义仓库链接文字
-    lastUpdated: 'last updated',
+    repoLabel: 'GitHub', // 自定义仓库链接文字
+    // lastUpdated: 'last updated',
     smoothScroll: true,
     displayAllHeaders: true,
     // navbar: false,
@@ -20,17 +20,44 @@ module.exports = {
         title: 'Vue',
         children: [
           {
+            title: '不看错过一个亿',
+            path: '/vue/notice'
+          },
+          {
             title: '初始化data',
             path: '/vue/data'
+          },
+          {
+            title: 'Vue 实例挂载的实现',
+            path: '/vue/mounted'
           }
         ]
+      },
+      {
+        title: 'http 下午茶',
+        children: []
+      },
+      {
+        title: 'git',
+        children: [
+          {
+            title: '常用命令',
+            path: '/git/command'
+          },
+          {
+            title: '常见问题',
+            path: '/git/questions'
+          },
+          {
+            title: 'GitHook之husky',
+            path: '/git/husky'
+          }
+        ]
+      },
+      {
+        title: '科学上网',
+        path: '/shadowsocks/ss'
       }
-      // {
-      //   title: 'http',
-      //   children: [ 
-          
-      //   ]
-      // }
     ]
   }
 }
