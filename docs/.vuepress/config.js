@@ -55,6 +55,23 @@ module.exports = {
         ]
       },
       {
+        title: '浏览器兼容',
+        children: [
+          {
+            title: 'ios',
+            path: '/compatible/ios'
+          },
+          {
+            title: 'Android',
+            path: '/compatible/android'
+          },
+          {
+            title: 'pc',
+            path: '/compatible/pc'
+          }
+        ]
+      },
+      {
         title: '科学上网',
         path: '/shadowsocks/ss'
       }
