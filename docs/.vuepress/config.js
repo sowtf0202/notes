@@ -30,6 +30,10 @@ module.exports = {
           {
             title: 'Vue 实例挂载的实现',
             path: '/vue/mounted'
+          },
+          {
+            title: '合并策略',
+            path: '/vue/mergeOptions'
           }
         ]
       },
