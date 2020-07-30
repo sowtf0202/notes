@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git 常用命令 | sowtf</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="sowtf's vuepress notes, sowtf, so what the fuck, 学习前端, vue 学习">
+    <link rel="preload" href="/notes/assets/css/0.styles.7afb217c.css" as="style"><link rel="preload" href="/notes/assets/js/app.6cd66b79.js" as="script"><link rel="preload" href="/notes/assets/js/2.ec8f0ee1.js" as="script"><link rel="preload" href="/notes/assets/js/9.93882fc2.js" as="script"><link rel="prefetch" href="/notes/assets/js/10.33f20121.js"><link rel="prefetch" href="/notes/assets/js/11.42cdc352.js"><link rel="prefetch" href="/notes/assets/js/12.fa0cc428.js"><link rel="prefetch" href="/notes/assets/js/13.c3c00fad.js"><link rel="prefetch" href="/notes/assets/js/14.78d0ddf3.js"><link rel="prefetch" href="/notes/assets/js/15.fcedc2d9.js"><link rel="prefetch" href="/notes/assets/js/16.891b61ce.js"><link rel="prefetch" href="/notes/assets/js/17.1c0203af.js"><link rel="prefetch" href="/notes/assets/js/18.1dc98b64.js"><link rel="prefetch" href="/notes/assets/js/3.c2e4562d.js"><link rel="prefetch" href="/notes/assets/js/4.4f9926a0.js"><link rel="prefetch" href="/notes/assets/js/5.705f60e5.js"><link rel="prefetch" href="/notes/assets/js/6.68dc5316.js"><link rel="prefetch" href="/notes/assets/js/7.86d43fb9.js"><link rel="prefetch" href="/notes/assets/js/8.922606e6.js">
+    <link rel="stylesheet" href="/notes/assets/css/0.styles.7afb217c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notes/" class="home-link router-link-active"><!----> <span class="site-name">sowtf</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/sowtf0202/notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/sowtf0202/notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>http 下午茶</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>git</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/git/command.html" class="active sidebar-link">常用命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/git/command.html#下载代码" class="sidebar-link">下载代码</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#查看工作区状态" class="sidebar-link">查看工作区状态</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#拉取与提交" class="sidebar-link">拉取与提交</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#合并与回滚" class="sidebar-link">合并与回滚</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#分支操作" class="sidebar-link">分支操作</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#查看提交记录" class="sidebar-link">查看提交记录</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#临时保存" class="sidebar-link">临时保存</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#打-tag" class="sidebar-link">打 tag</a></li><li class="sidebar-sub-header"><a href="/notes/git/command.html#其他" class="sidebar-link">其他</a></li></ul></li><li><a href="/notes/git/questions.html" class="sidebar-link">常见问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/git/questions.html#文件较大如何拉取" class="sidebar-link">文件较大如何拉取</a></li><li class="sidebar-sub-header"><a href="/notes/git/questions.html#后期打标签" class="sidebar-link">后期打标签</a></li></ul></li><li><a href="/notes/git/husky.html" class="sidebar-link">GitHook之husky</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器兼容</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/notes/shadowsocks/ss.html" class="sidebar-link">科学上网</a></li><li><a href="/notes/utils/util.html" class="sidebar-link">工具方法</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-常用命令"><a href="#git-常用命令" class="header-anchor">#</a> git 常用命令</h1> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener noreferrer">git 中文文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <h2 id="下载代码"><a href="#下载代码" class="header-anchor">#</a> 下载代码</h2> <div class="language-js extra-class"><pre class="language-js"><code>git clone <span class="token punctuation">[</span>版本库网址<span class="token punctuation">]</span> <span class="token comment">//克隆远程仓库代码到本地</span>
+</code></pre></div><h2 id="查看工作区状态"><a href="#查看工作区状态" class="header-anchor">#</a> 查看工作区状态</h2> <div class="language-js extra-class"><pre class="language-js"><code>git status <span class="token comment">//查看工作区文件修改状态</span>
+
+git diff <span class="token punctuation">[</span>file name<span class="token punctuation">]</span> <span class="token comment">//查看某个文件的改动状态</span>
+</code></pre></div><h2 id="拉取与提交"><a href="#拉取与提交" class="header-anchor">#</a> 拉取与提交</h2> <div class="language-js extra-class"><pre class="language-js"><code>git fetch <span class="token comment">//拉取远程仓库代码</span>
+
+git pull <span class="token comment">//拉取远程仓库代码并合并(pull=fetch+merge)</span>
+
+git pull origin <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//拉取指定分支代码</span>
+
+git push <span class="token comment">//将代码推到远程仓库</span>
+
+git push origin <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//将代码提交到指定分支</span>
+
+git reset <span class="token comment">//将 add 过的代码还原到工作区</span>
+
+git add <span class="token punctuation">[</span>文件名<span class="token punctuation">]</span> <span class="token comment">//将修改的文件添加到暂存区</span>
+
+git commit <span class="token operator">-</span>m <span class="token string">'commit message'</span> <span class="token comment">// 备注提交信息</span>
+</code></pre></div><h2 id="合并与回滚"><a href="#合并与回滚" class="header-anchor">#</a> 合并与回滚</h2> <div class="language-js extra-class"><pre class="language-js"><code>git merge <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//合并指定分支到当前所在的分支</span>
+
+git cherry<span class="token operator">-</span>pick <span class="token punctuation">[</span>commit<span class="token operator">-</span>hashid<span class="token punctuation">]</span> <span class="token comment">//将某一个分支的单次提交合并到当前分支</span>
+
+git reset <span class="token operator">--</span>hard <span class="token punctuation">[</span>commit<span class="token operator">-</span>hashid<span class="token punctuation">]</span> <span class="token comment">//回退到指定版本</span>
+</code></pre></div><h2 id="分支操作"><a href="#分支操作" class="header-anchor">#</a> 分支操作</h2> <div class="language-js extra-class"><pre class="language-js"><code>git checkout <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//本地切换到指定分支</span>
+
+git checkout <span class="token operator">--</span>track origin<span class="token operator">/</span><span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//创建一条新的分支并追踪它</span>
+
+git checkout <span class="token operator">-</span>b <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//创建分支并切换到该分支</span>
+
+git branch <span class="token comment">//查看本地全部分支</span>
+
+git branch <span class="token operator">-</span>a <span class="token comment">//查看远程全部分支</span>
+
+git branch <span class="token operator">-</span>d <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//删除指定分支</span>
+
+git branch <span class="token operator">-</span><span class="token constant">D</span> <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//强制删除指定分支</span>
+
+git branch <span class="token operator">--</span><span class="token keyword">set</span><span class="token operator">-</span>upstream<span class="token operator">-</span>to<span class="token operator">=</span>origin<span class="token operator">/</span><span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment">//追踪分支</span>
+</code></pre></div><h2 id="查看提交记录"><a href="#查看提交记录" class="header-anchor">#</a> 查看提交记录</h2> <div class="language-js extra-class"><pre class="language-js"><code>git log <span class="token comment">//查看所有提交日志</span>
+
+git log <span class="token operator">--</span>pretty<span class="token operator">=</span>oneline <span class="token operator">--</span>author<span class="token operator">=</span><span class="token string">&quot;xxx&quot;</span> <span class="token comment">//查看 xxx 的提交日志</span>
+
+git log <span class="token operator">-</span>p <span class="token punctuation">[</span>commit<span class="token operator">-</span>hashid<span class="token punctuation">]</span> 或 git show <span class="token punctuation">[</span>commit<span class="token operator">-</span>hashid<span class="token punctuation">]</span> filename <span class="token comment">//查看某次提交修改的内容</span>
+</code></pre></div><h2 id="临时保存"><a href="#临时保存" class="header-anchor">#</a> 临时保存</h2> <div class="language-js extra-class"><pre class="language-js"><code>git stash <span class="token comment">//将所有未提交的修改（工作区和暂存区）保存至堆栈中</span>
+
+git stash save <span class="token string">&quot;save message&quot;</span> <span class="token comment">//添加备注,便于查找</span>
+
+git stash list <span class="token comment">//查看stash列表</span>
+
+git stash show <span class="token comment">//显示做了哪些改动，默认show第一个存储,如果要显示其他存贮，后面加stash@{$num}，比如第二个 git stash show stash@{1}</span>
+
+git stash show <span class="token operator">-</span>p <span class="token comment">//显示第一个存储的改动，如果想显示其他存存储，命令：git stash show  stash@{$num}  -p ，比如第二个：git stash show  stash@{1}  -p</span>
+
+git stash apply <span class="token comment">//应用某个存储,但不会把存储从存储列表中删除，默认使用第一个存储,即stash@{0}，如果要使用其他个，git stash apply stash@{$num} ， 比如第二个：git stash apply stash@{1}</span>
+
+git stash pop <span class="token comment">//恢复之前缓存的工作目录，将缓存堆栈中的对应stash删除，并将对应修改应用到当前的工作目录下,默认为第一个stash,即stash@{0}，如果要应用并删除其他stash，命令：git stash pop stash@{$num} ，比如应用并删除第二个：git stash pop stash@{1}</span>
+
+git stash drop stash@<span class="token punctuation">{</span>$num<span class="token punctuation">}</span> <span class="token comment">//丢弃stash@{$num}存储，从列表中删除这个存储</span>
+
+git stash clear <span class="token comment">//删除所有缓存的stash</span>
+</code></pre></div><h2 id="打-tag"><a href="#打-tag" class="header-anchor">#</a> 打 tag</h2> <div class="language-js extra-class"><pre class="language-js"><code>git tag <span class="token comment">//列出已有的标签</span>
+
+git tag <span class="token operator">-</span>l <span class="token string">&quot;v1.8.5*&quot;</span> <span class="token comment">//按照特定的模式查找标签</span>
+
+git tag <span class="token operator">-</span>a <span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token operator">-</span>m <span class="token string">&quot;my version 1.0&quot;</span> <span class="token comment">//打附注标签</span>
+
+git tag <span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token comment">//打轻量标签</span>
+
+git show <span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token comment">//查看标签信息和与之对应的提交信息</span>
+
+git push origin <span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token comment">//传送标签到远程仓库服务器上</span>
+
+git push origin <span class="token operator">--</span>tags <span class="token comment">//把所有不在远程仓库服务器上的标签全部传送到远程仓库</span>
+
+git tag <span class="token operator">-</span>d <span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token comment">//删除标签</span>
+
+git push origin <span class="token operator">:</span><span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token comment">//删除远程仓库中的标签</span>
+
+git push origin <span class="token operator">--</span><span class="token keyword">delete</span> <span class="token punctuation">[</span>tagname<span class="token punctuation">]</span> <span class="token comment">//删除远程仓库中的标签</span>
+</code></pre></div><h2 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h2> <div class="language-js extra-class"><pre class="language-js"><code>git remote <span class="token operator">-</span>v <span class="token comment">//查看远程仓库地址</span>
+
+git remote <span class="token keyword">set</span><span class="token operator">-</span>url origin <span class="token punctuation">[</span>remote url<span class="token punctuation">]</span> <span class="token comment">//修改git的仓库地址</span>
+
+git update<span class="token operator">-</span>index <span class="token operator">--</span>assume<span class="token operator">-</span>unchanged <span class="token punctuation">[</span>file name<span class="token punctuation">]</span> <span class="token comment">//本地添加忽略文件(该命令只能用于单个文件的忽略)</span>
+
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">&quot;XXX@xxx.com&quot;</span> <span class="token comment">//设置邮箱地址</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/vue/mergeOptions.html" class="prev">
+        合并策略
+      </a></span> <span class="next"><a href="/notes/git/questions.html">
+        常见问题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/notes/assets/js/app.6cd66b79.js" defer></script><script src="/notes/assets/js/2.ec8f0ee1.js" defer></script><script src="/notes/assets/js/9.93882fc2.js" defer></script>
+  </body>
+</html>

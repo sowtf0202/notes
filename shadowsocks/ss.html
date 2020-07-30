@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搬瓦工安装 shadowsocks | sowtf</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="sowtf's vuepress notes, sowtf, so what the fuck, 学习前端, vue 学习">
+    <link rel="preload" href="/notes/assets/css/0.styles.7afb217c.css" as="style"><link rel="preload" href="/notes/assets/js/app.6cd66b79.js" as="script"><link rel="preload" href="/notes/assets/js/2.ec8f0ee1.js" as="script"><link rel="preload" href="/notes/assets/js/12.fa0cc428.js" as="script"><link rel="prefetch" href="/notes/assets/js/10.33f20121.js"><link rel="prefetch" href="/notes/assets/js/11.42cdc352.js"><link rel="prefetch" href="/notes/assets/js/13.c3c00fad.js"><link rel="prefetch" href="/notes/assets/js/14.78d0ddf3.js"><link rel="prefetch" href="/notes/assets/js/15.fcedc2d9.js"><link rel="prefetch" href="/notes/assets/js/16.891b61ce.js"><link rel="prefetch" href="/notes/assets/js/17.1c0203af.js"><link rel="prefetch" href="/notes/assets/js/18.1dc98b64.js"><link rel="prefetch" href="/notes/assets/js/3.c2e4562d.js"><link rel="prefetch" href="/notes/assets/js/4.4f9926a0.js"><link rel="prefetch" href="/notes/assets/js/5.705f60e5.js"><link rel="prefetch" href="/notes/assets/js/6.68dc5316.js"><link rel="prefetch" href="/notes/assets/js/7.86d43fb9.js"><link rel="prefetch" href="/notes/assets/js/8.922606e6.js"><link rel="prefetch" href="/notes/assets/js/9.93882fc2.js">
+    <link rel="stylesheet" href="/notes/assets/css/0.styles.7afb217c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notes/" class="home-link router-link-active"><!----> <span class="site-name">sowtf</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/sowtf0202/notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/sowtf0202/notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/vue/notice.html" class="sidebar-link">不看错过一个亿</a></li><li><a href="/notes/vue/data.html" class="sidebar-link">初始化data</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/vue/data.html#为什么组件中-data-是一个函数" class="sidebar-link">为什么组件中 data 是一个函数</a></li><li class="sidebar-sub-header"><a href="/notes/vue/data.html#为什么-this-xxx-可以访问到-data的属性" class="sidebar-link">为什么 this.xxx 可以访问到 data的属性</a></li></ul></li><li><a href="/notes/vue/mounted.html" class="sidebar-link">Vue 实例挂载的实现</a></li><li><a href="/notes/vue/mergeOptions.html" class="sidebar-link">合并策略</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>http 下午茶</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器兼容</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/notes/shadowsocks/ss.html" class="active sidebar-link">科学上网</a></li><li><a href="/notes/utils/util.html" class="sidebar-link">工具方法</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="搬瓦工安装-shadowsocks"><a href="#搬瓦工安装-shadowsocks" class="header-anchor">#</a> 搬瓦工安装 shadowsocks</h1> <p>搬瓦工没有19.99$/年的 vps 了,心好痛,目前最便宜的是49.99$/年
+<br></p> <p>首先按照这个顺序进入控制面板 <code>services</code> -&gt; <code>My Services</code> -&gt; <code>KiViVM Control Panel</code> <br></p> <ul><li><ol><li>进入控制面板,如果左侧 <code>KiViVM Extras</code> 中有 <code>Shadowsocks Server</code> 一栏(目前有些用户控制面板是没有一键安装的),那么点进去一键安装即可,  点击 <code>Install Shadowsocks Server</code> 即可一键安装,耐心等待安装完成后点击 <code>Go Back</code> 返回就可以看到 SS 信息了</li></ol></li></ul> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>iphone 上 Wingy 只支持 <code>aes-256-cfb</code> 模式
+模式,端口,密码就可以设置 SS 客户端了</p></div> <ul><li><ol start="2"><li>如果控制面板中左侧没有 <code>Shadowsocks Server</code> 一栏, 网上说可以通过 <a href="https://kiwivm.64clouds.com/preloader.php?load=/main-exec.php?mode=extras_shadowsocks" target="_blank" rel="noopener noreferrer">链接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 可以访问一键安装页面,但是我试了一下好像不行,仅做参考,如果可以访问,参考方式 1</li></ol></li> <li><ol start="3"><li>SSH 脚本方式安装Shadowsocks
+<br></li></ol></li></ul> <p>搬瓦工为了用户的安全，要求用户在购买 VPS 后，要自己手动在 KiwiVM 控制面板重置密码, 进入控制面板,左侧找到 <code>Root password modification</code>, 进入点击 <code>Generate and set new root password</code> 重置密码</p> <p>左侧菜单栏 <code>Main controls</code> 进入,复制 ip 地址和端口号
+<br></p> <p>mac 系统直接终端输入命令,回车,然后输入密码进入服务器</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">ssh</span> root@<span class="token punctuation">[</span>ip<span class="token punctuation">]</span> -p <span class="token punctuation">[</span>端口号<span class="token punctuation">]</span>
+</code></pre></div><br> <p>windows 系统安装 <code>putty</code>, <code>Xshell</code> 或者其他连接接服务器的软件进入服务器
+<br></p> <p>然后复制以下命令,回车</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">wget</span> --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.co <span class="token punctuation">..</span>. /shadowsocks-all.sh
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>国外服务器运行脚本时容易出错，如出现错误提示 bash: wget: command not found，可以请在先执行 yum -y install wget 命令。成功后，再执行上面的命令。如果没有出现提示错误，请略过</p></div> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">chmod</span> +x shadowsocks-all.sh
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>./shadowsocks-all.sh <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">|</span> <span class="token function">tee</span> shadowsocks-all.log
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>下面会提示你输入你的SS SERVER的密码，和端口。不输入就是默认。跑完命令后会出来你的SS客户端的信息。</p></div> <p>然后会提示选择设置模式, 输入7 ,选择 <code>aes-256-cfb</code> 模式, 回车
+<br></p> <p>耐心等待几分钟, 安装完成后,会出现如下提示</p> <div class="language-shell extra-class"><pre class="language-shell"><code>Congratulations, Shadowsocks-Python server <span class="token function">install</span> completed<span class="token operator">!</span>
+Your Server IP <span class="token builtin class-name">:</span> IP地址
+Your Server Port <span class="token builtin class-name">:</span> 端口
+Your Password <span class="token builtin class-name">:</span> 密码
+Your Encryption Method: aes-256-gcm
+Your QR Code: <span class="token punctuation">(</span>For Shadowsocks Windows, OSX, Android and iOS clients<span class="token punctuation">)</span>
+ss://YWVzLTsadsa206YnVkZHkyMDA4QDEwNC4yMjQuMTM1Ldfghdfgk<span class="token operator">=</span>
+Your QR Code has been saved as a PNG <span class="token function">file</span> path:
+/root/shadowsocks_python_qr.png
+Welcome to visit: https://teddysun.com/486.html
+Enjoy it<span class="token operator">!</span>
+</code></pre></div><p>复制 <code>ip</code> <code>port</code> <code>password</code> 自行保存登录 ss 客户端使用
+<br></p> <p>End</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/compatible/pc.html" class="prev">
+        pc
+      </a></span> <span class="next"><a href="/notes/utils/util.html">
+        工具方法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/notes/assets/js/app.6cd66b79.js" defer></script><script src="/notes/assets/js/2.ec8f0ee1.js" defer></script><script src="/notes/assets/js/12.fa0cc428.js" defer></script>
+  </body>
+</html>
