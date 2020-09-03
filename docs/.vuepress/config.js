@@ -78,6 +78,10 @@ module.exports = {
       {
         title: '科学上网',
         path: '/shadowsocks/ss'
+      },
+      {
+        title: '工具方法',
+        path: '/utils/util'
       }
     ]
   }

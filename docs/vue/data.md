@@ -83,9 +83,9 @@ function initData (vm: Component) {
 }
 ```
 
-## 为什么 data 可以是一个函数
+## 为什么组件中 data 是一个函数
 
-首先会判断 `data` 类型如果是 `function` , 则会调用 `getData` 方法获取到 `data` 的返回值, `getData` 实际上就是返回 `data.call(vm, vm)`, 同时将 `vm._data` 指向我们自己定义的 `data`
+首先会判断 `data` 类型如果是 `function` , 则会调用 `getData` 方法获取到 `data` 的返回值, `getData` 实际上就是返回 `data.call(vm, vm)`, 同时将 `vm._data` 指向我们自己定义的 `data`, 这样做可以避免组件在复用的时候数据修改导致其他组件数据污染,通过函数返回一个对象其实每个复用的组件都是返回了一份数据的拷贝,防止组件复用时候数据污染
 
 ## 为什么 this.xxx 可以访问到 data的属性
 
